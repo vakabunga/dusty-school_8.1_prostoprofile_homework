@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/Header/Header';
 import { Avatar } from './components/Avatar/Avatar';
+import { Menu } from './components/Menu/Menu';
 
 const menuHeader = {
   text: 'Profile'
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Header text={menuHeader.text} />
       <Avatar name={userAvatar.name} bio={userAvatar.bio} />
+      <Menu />
     </div>
   );
 }
