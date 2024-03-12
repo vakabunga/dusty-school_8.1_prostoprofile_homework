@@ -7,10 +7,14 @@
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.Header-Button {
-    border: none;
-    background: none;
+.Header-Text {
+    /* border: none;
+    background: none; */
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+}
+
+.Header-Image {
+  cursor: pointer;
 }
