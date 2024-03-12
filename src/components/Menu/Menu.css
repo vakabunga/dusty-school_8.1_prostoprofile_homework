@@ -1,0 +1,15 @@
+.Menu {
+  padding-left: 5px;
+  margin-top: 50px;
+}
+
+.Menu-List {
+  margin: 0;
+}
+
+.Menu-List-Item-Span {
+  padding-left: 20px;
+  line-height: 60px;
+  position: relative;
+  bottom: 5px;
+}
