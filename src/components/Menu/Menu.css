@@ -6,6 +6,7 @@
 .Menu-List {
   line-height: 60px;
   margin: 0;
+  text-align: left;
 }
 
 .Menu-List-Item {

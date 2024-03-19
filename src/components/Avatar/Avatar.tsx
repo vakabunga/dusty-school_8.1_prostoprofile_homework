@@ -3,6 +3,7 @@ import './Avatar.css';
 import { cnAvatar } from './Avatar.classname';
 import avatarImage from '../../img/avatar.svg';
 
+
 type AvatarProps = {
   name: string;
   bio: string;
