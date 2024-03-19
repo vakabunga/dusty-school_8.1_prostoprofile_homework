@@ -1,7 +1,5 @@
 import React from 'react';
-// import { CSSProperties } from 'react';
 import { FC } from 'react';
-import './Item.css';
 
 type ItemProps = {
   listItemClass: string;

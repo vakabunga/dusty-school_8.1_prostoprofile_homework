@@ -4,13 +4,16 @@
 }
 
 .Menu-List {
+  line-height: 60px;
   margin: 0;
   text-align: left;
 }
 
-.Menu-List-Item-Span {
+.Menu-List-Item {
   padding-left: 20px;
-  line-height: 60px;
+}
+
+.Menu-List-Item-Span {
   position: relative;
   bottom: 5px;
 }

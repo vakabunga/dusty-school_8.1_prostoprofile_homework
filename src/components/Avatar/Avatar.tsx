@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import './Avatar.css';
 import { cnAvatar } from './Avatar.classname';
-import AvatarImage from '../../img/avatar.svg';
+import avatarImage from '../../img/avatar.svg';
+
 
 type AvatarProps = {
   name: string;
@@ -10,14 +11,14 @@ type AvatarProps = {
 
 const Avatar: FC<AvatarProps> = ({ name, bio }) => {
   return (
-    <div className={cnAvatar('Container')}>
-      <div className={cnAvatar('')}>
+    <div className={cnAvatar()}>
+      <div className={cnAvatar('ImageContainer')}>
         <img
-          className={cnAvatar('Image')}
-          src={AvatarImage}
+          className={cnAvatar('ImageContainer-Image')}
+          src={avatarImage}
           alt="back"
         />
-        <button className={cnAvatar('Button-Edit')}>
+        <button className={cnAvatar('ImageContainer-EditButton')}>
         </button>
       </div>
       <p className={cnAvatar('Name')}>{name}</p>
