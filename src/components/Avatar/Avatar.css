@@ -2,15 +2,15 @@
   position: relative;
 }
 
-.Avatar-Container {
+.Avatar-ImageContainer {
   text-align: center;
 }
 
-.Avatar-Image {
+.Avatar-ImageContainer-Image {
   margin: 30px auto 10px;
 }
 
-.Avatar-Button-Edit {
+.Avatar-ImageContainer-EditButton {
   position: absolute;
 
   width: 40px;
@@ -27,11 +27,12 @@
 }
 
 .Avatar-Name {
+  color: #505050;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   margin: 0;
-  color: #505050;
+  text-align: center;
 }
 
 .Avatar-Bio {
