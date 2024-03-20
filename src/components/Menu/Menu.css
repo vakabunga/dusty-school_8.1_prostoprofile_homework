@@ -9,11 +9,11 @@
   text-align: left;
 }
 
-.Menu-List-Item {
+.Menu-ListItem {
   padding-left: 20px;
 }
 
-.Menu-List-Item-Span {
+.Menu-ListItemSpan {
   position: relative;
   bottom: 5px;
 }
