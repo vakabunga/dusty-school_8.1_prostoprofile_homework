@@ -40,7 +40,7 @@ const Menu = () => {
   return (
     <div className={cnMenu()}>
       <ul className={cnMenu('List')}>
-        {menuList.map(item => <Item listItemClass={cnMenu('List-Item')} text={item.name} listStyleImage={item.imageUrl} spanListItemClass={cnMenu('List-Item-Span')}/>)}
+        {menuList.map(item => <Item text={item.name} listStyleImage={item.imageUrl} />)}
       </ul>
     </div>
   );
