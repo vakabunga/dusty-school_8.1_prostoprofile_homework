@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Header } from '../Header/Header';
 import { Avatar } from '../Avatar/Avatar';
 import { Menu } from '../Menu/Menu';
