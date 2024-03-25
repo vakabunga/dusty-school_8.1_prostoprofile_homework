@@ -49,8 +49,7 @@ const Menu: FC<MenuProps> = (menuClassName) => {
   return (
     <div className={cnMenu(null, menuClassName.menuClassName)}>
       <ul className={cnMenu('List')}>
-        {menuList.map(item => <Item text={item.name} listStyleImage={item.imageUrl} />
-        )}
+        {menuList.map((item, index) => <Item key={index} text={item.name} listStyleImage={item.imageUrl} />)}
       </ul>
     </div>
   );
