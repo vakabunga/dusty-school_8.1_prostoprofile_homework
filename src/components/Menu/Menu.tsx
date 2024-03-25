@@ -1,13 +1,21 @@
 import React from 'react';
-import './Menu.css';
+import { FC } from 'react';
+
 import { Item } from './Item/Item';
 import { cnMenu } from './Menu.classname';
+
 import Key from '../../img/key.svg';
 import Chat from '../../img/chat.svg';
 import Bell from '../../img/bell.svg';
 import Storage from '../../img/storage.svg';
 import Help from '../../img/help.svg';
 import Invite from '../../img/invite.svg';
+
+import './Menu.css';
+
+type MenuProps = {
+  menuClassName? : string;
+};
 
 const menuList = [
   {
@@ -36,14 +44,16 @@ const menuList = [
   }
 ];
 
-const Menu = () => {
+
+const Menu: FC<MenuProps> = (menuClassName) => {
   return (
-    <div className={cnMenu()}>
+    <div className={cnMenu(null, menuClassName.menuClassName)}>
       <ul className={cnMenu('List')}>
-        {menuList.map(item => <Item text={item.name} listStyleImage={item.imageUrl} />)}
+        {menuList.map(item => <Item text={item.name} listStyleImage={item.imageUrl} />
+        )}
       </ul>
     </div>
   );
-}
+};
 
 export { Menu };
