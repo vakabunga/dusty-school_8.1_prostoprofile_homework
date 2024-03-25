@@ -1,8 +1,13 @@
 import React from 'react';
+
+import { cnProfile } from './Profile.classname';
+
 import { Header } from '../Header/Header';
 import { Avatar } from '../Avatar/Avatar';
 import { Menu } from '../Menu/Menu';
 import { Button } from '../Button/Button';
+
+import './Profile.css';
 
 const profile = {
   header: 'Profile',
@@ -16,7 +21,7 @@ const Profile = () => {
     <div>
       <Header text={profile.header} />
       <Avatar name={profile.name} bio={profile.bio} />
-      <Menu />
+      <Menu menuClassName={cnProfile('Menu')}/>
       <Button text={profile.buttonText}/>
     </div>
   );
